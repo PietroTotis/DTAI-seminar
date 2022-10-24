@@ -180,5 +180,64 @@
     text-align: center;
     margin: 0 auto;
     opacity: 0.5;
-    ;
+}
+
+.container {
+    height: 100%;
+    position: relative;
+}
+
+#frame1 {
+    position: absolute;
+    left: 45.5%;
+    top: 15%;
+    z-index: 1000;
+    border: solid 3px;
+    height: 10px;
+    width: 7%;
+    border-color: rgba(135, 192, 189, 1);
+}
+
+#frame2 {
+    position: absolute;
+    left: 45.5%;
+    top: 24%;
+    z-index: 1000;
+    border: solid 3px;
+    height: 30px;
+    width: 7%;
+    border-color: rgba(135, 192, 189, 1);
+}
+
+#frame3 {
+    position: absolute;
+    left: 40%;
+    top: 24%;
+    z-index: 1000;
+    border: solid 3px;
+    height: 60px;
+    width: 5%;
+    border-color: rgba(135, 192, 189, 1);
+}
+
+#frame4 {
+    position: absolute;
+    left: 45.5%;
+    top: 14%;
+    z-index: 1000;
+    border: solid 3px;
+    height: 45px;
+    width: 7%;
+    border-color: rgba(135, 192, 189, 1);
+}
+
+#frame5 {
+    position: absolute;
+    left: 53%;
+    top: 14%;
+    z-index: 1000;
+    border: solid 3px;
+    height: 75px;
+    width: 6%;
+    border-color: rgba(135, 192, 189, 1);
 }

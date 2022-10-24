@@ -1,0 +1,153 @@
+<!doctype html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+	<title>reveal.js</title>
+
+	<link rel="stylesheet" href="dist/reset.css">
+	<link rel="stylesheet" href="dist/reveal.css">
+	<link rel="stylesheet" href="dist/custom.css">
+	<link rel="stylesheet" href="dist/theme/kuleuven.css">
+
+	<link rel="stylesheet" href="plugin/simplemenu/simplemenu.css">
+
+	<!-- Theme used for syntax highlighted code -->
+	<link rel="stylesheet" href="plugin/highlight/monokai.css">
+	<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+	<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+	<script src="plugin/simplemenu/simplemenu.js"></script>
+</head>
+
+<body>
+	<div class="reveal">
+		<div class="menubar">
+			<ul class="menu"></ul>
+		</div>
+		<div class="slides">
+			<section data-auto-animate data-external="Slides/1-title.html">
+			</section>
+			<section data-name="Problem statement">
+				<section data-auto-animate>
+					<h2>Combinatorial Counting</h2>
+				</section>
+				<section data-auto-animate data-external="Slides/2-banana.html">
+				</section>
+				<section data-external="Slides/3-workers.html">
+				</section>
+				<section data-external="Slides/4-tvs.html">
+				</section>
+				<section data-external="Slides/5-problem.html">
+				</section>
+				<section data-external="Slides/5.1-challenge.html">
+				</section>
+				<section data-external="Slides/7-1step.html">
+				</section>
+				<section data-external="Slides/6-2step.html">
+				</section>
+			</section>
+			<section data-name="Step 1: Modelling">
+				<section data-auto-animate>
+					<h2>Step 1: Modelling</h2>
+				</section>
+				<section data-auto-animate data-external="Slides/8-formal.html">
+				</section>
+				<section data-external="Slides/9-multisets.html">
+				</section>
+				<section data-external="Slides/10-FO_lang.html">
+				</section>
+				<section data-external="Slides/11-CSP_lang.html">
+				</section>
+				<section data-external="Slides/12-CoLa_multisets.html">
+				</section>
+				<section data-auto-animate data-external="Slides/13-configurations.html">
+				</section>
+				<section data-external="Slides/14-ConfigurationsFOL.html">
+				</section>
+				<section data-external="Slides/15-ConfigurationsCSP.html">
+				</section>
+				<section data-auto-animate data-external="Slides/16-configurations_tab.html">
+				</section>
+				<section data-auto-animate data-external="Slides/17-CoLabanana.html">
+				</section>
+				<section data-external="Slides/18-Constraints.html">
+				</section>
+				<section data-external="Slides/19-ConstraintsFOL.html">
+				</section>
+				<section data-external="Slides/20-ConstraintsCoLa.html">
+				</section>
+				<section data-auto-animate data-external="Slides/20.1-ConstraintsCoLa.html">
+				</section>
+			</section>
+			<section data-name="Step 2: Reasoning">
+				<section data-auto-animate>
+					<h2>Step 2: Lifted Reasoning</h2>
+				</section>
+				<section data-auto-animate data-external="Slides/21-lreasoning.html">
+				</section>
+				<section data-auto-animate data-external="Slides/21.1-lreasoning_ex.html">
+				</section>
+				<section data-external="Slides/22-principles.html">
+				</section>
+				<section data-external="Slides/23-multiplication.html">
+				</section>
+				<section data-external="Slides/24-splitting.html">
+				</section>
+				<section data-external="Slides/25-propositionalization.html">
+				</section>
+				<section data-external="Slides/26-exchangeability.html">
+				</section>
+				<section data-auto-animate data-external="Slides/27-coso.html">
+				</section>
+				<section data-auto-animate data-external="Slides/28-ex1.html">
+				</section>
+				<section data-auto-animate data-external="Slides/29-ex2.html">
+				</section>
+				<section data-auto-animate data-external="Slides/30-ex3.html">
+				</section>
+				<section data-auto-animate data-external="Slides/31-ex4.html">
+				</section>
+				<section data-auto-animate data-external="Slides/32-histograms.html">
+				</section>
+				<section data-auto-animate data-external="Slides/33-histograms_ex.html">
+				</section>
+				<section data-auto-animate data-external="Slides/34-growing_domains.html">
+				</section>
+				<section data-external="Slides/35-conclusion.html">
+				</section>
+			</section>
+
+		</div>
+	</div>
+
+	<script src="dist/reveal.js"></script>
+	<script src="plugin/notes/notes.js"></script>
+	<script src="plugin/markdown/markdown.js"></script>
+	<script src="plugin/highlight/highlight.js"></script>
+	<script src="plugin/math/math.js"></script>
+	<script>
+		// More info about initialization & config:
+		// - https://revealjs.com/initialization/
+		// - https://revealjs.com/config/
+		Reveal.initialize({
+			hash: true,
+
+			// Learn about plugins: https://revealjs.com/plugins/
+			simplemenu: {
+				auto: true
+			},
+			plugins: [Simplemenu, RevealMarkdown, RevealHighlight, RevealNotes, RevealMath.MathJax3],
+			dependencies: [{
+				src: 'plugin/external/external.js',
+				condition: function () {
+					return !!document.querySelector('[data-external],[data-external-replace]');
+				}
+			}
+			]
+		});
+	</script>
+</body>
+
+</html>
